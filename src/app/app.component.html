@@ -1,0 +1,15 @@
+<app-child 
+(greetingFromChild)="getFromChild($event)"
+[message]="'Hello!Welcome to NgWorld!'"></app-child>
+
+<h1>{{greeting}}</h1>
+<button [disabled]="switch">Hello Angular</button>
+
+<button (click)="onOff()">OnOffButton</button>
+<h1>{{sayHello()}}</h1>
+<img src="{{imgUrl}}" width="300" height="300" alt="">
+<img [src]="imgUrl" width="300" height="300" alt="">
+<p>Name :{{student.name}}</p>
+<p>Hobbt : {{student.hobby}}</p>
+
+<router-outlet></router-outlet>

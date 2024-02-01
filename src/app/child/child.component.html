@@ -1,0 +1,21 @@
+<p>child component!</p>
+
+<h1>{{message}}</h1>
+
+<!-- <ul *ngFor="let fruit of fruits">
+        <li>{{fruit}}</li>
+    </ul> -->
+@for (item of fruits; track $index) {
+<ul>
+    <li>{{item}}</li>
+</ul>
+}
+
+<p><input type="text" #data></p>
+<button (click)="sendToParent(data.value)">Send to Parent</button>
+
+
+
+
+<p><input type="text" #input placeholder="Enter Fruits"></p>
+<button (click)="addFruit(input.value)">Add Fruit</button>
